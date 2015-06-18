@@ -6,15 +6,9 @@
                 <h1>Espace enseignant</h1>
             </div>
         </div>
-
         <div class="row text-center">
             <div class="col-sm-12">
-                <h2>Filtrez les notes</h2>
-            </div>
-        </div>
-
-        <div class="row text-center">
-            <div class="col-sm-12">
+                <label for="consultation">Filtrez les notes : </label>
                 <select name="consultation" id="consultation">
                     <option value="etudiant" selected>Par étudiant</option>
                     <option value="promotion">Par classe</option>
@@ -50,7 +44,7 @@
                                     <td>/20</td>
                                 </tr>
                                 <tr>
-                                    <td>Marcheterre</td>
+                                    <td><a href="single-etudiant.php">Marcheterre</a></td>
                                     <td>Roger</td>
                                     <td>SID-1</td>
                                     <td>/20</td>
@@ -58,7 +52,7 @@
                                     <td>/20</td>
                                 </tr>
                                 <tr>
-                                    <td>Boulanger</td>
+                                    <td><a href="single-etudiant.php">Boulanger</a></td>
                                     <td>Audrey</td>
                                     <td>SID-2</td>
                                     <td>/20</td>
@@ -74,7 +68,6 @@
             </div>
         </div>
 
-        <!-- block:Classe -->
         <div class="row text-center">
             <a class="bottom-link" href="index.php">Retour à l'écran de connexion</a>
         </div>
