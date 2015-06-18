@@ -14,5 +14,10 @@ if ($mysqli->connect_error) {
 
 echo 'Connexion réussie... ' . $mysqli->host_info . "\n";
 
+
+echo 'test';
+
+var_dump($mysqli);
+
 $mysqli->close();
 ?>
