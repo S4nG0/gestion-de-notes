@@ -219,13 +219,13 @@ a:hover, a:focus, a:visited {
 }
 /* line 214, ../compass/global.scss */
 .enseignant .enseignant-block #etudiant,
-.enseignant .enseignant-block #promotion,
+.enseignant .enseignant-block #classe,
 .enseignant .enseignant-block #controle {
   margin-top: 25px;
 }
 /* line 219, ../compass/global.scss */
 .enseignant .enseignant-block #etudiant input,
-.enseignant .enseignant-block #promotion input,
+.enseignant .enseignant-block #classe input,
 .enseignant .enseignant-block #controle input {
   display: inline-block;
   width: 50px;

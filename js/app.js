@@ -26,3 +26,24 @@ $('.etudiant .buttons .btn').on('click', function(){
         break;
     }
 });
+
+$('#classe').hide();
+$('#controle').hide();
+
+function showDiv(el) {
+    if (el.value == 'etudiant') {
+        $('#classe').hide();
+        $('#controle').hide();
+        $('#etudiant').fadeIn(300);
+    }
+    if (el.value == 'classe') {
+        $('#classe').fadeIn(300);
+        $('#controle').hide();
+        $('#etudiant').hide();
+    }
+    if (el.value == 'controle') {
+        $('#classe').hide();
+        $('#controle').fadeIn(300);
+        $('#etudiant').hide();
+    }
+}
