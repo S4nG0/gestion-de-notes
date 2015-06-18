@@ -3,7 +3,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$database = "projetphp_sql1";
+$database = "projetphp_sql";
 
 $mysqli = new mysqli($server, $username, $password, $database);
 
