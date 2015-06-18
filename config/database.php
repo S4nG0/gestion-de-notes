@@ -3,7 +3,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$database = "projetphp_sql";
+$database = "projetphp_sql1";
 
 $mysqli = new mysqli($server, $username, $password, $database);
 
@@ -12,12 +12,6 @@ if ($mysqli->connect_error) {
             . $mysqli->connect_error);
 }
 
-echo 'Connexion réussie... ' . $mysqli->host_info . "\n";
-
-
-echo 'test';
-
-var_dump($mysqli);
 
 $mysqli->close();
 ?>
