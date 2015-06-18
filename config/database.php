@@ -12,7 +12,7 @@ if ($mysqli->connect_error) {
             . $mysqli->connect_error);
 }
 
-echo 'Succès... ' . $mysqli->host_info . "\n";
+echo 'Connexion réussie... ' . $mysqli->host_info . "\n";
 
 $mysqli->close();
 ?>
