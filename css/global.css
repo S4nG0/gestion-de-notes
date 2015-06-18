@@ -161,21 +161,26 @@ a:hover, a:focus, a:visited {
   font-size: 85%;
 }
 
+/* line 156, ../compass/global.scss */
+.text-italic {
+  font-style: italic;
+}
+
 /*------------------------------------*\
     #SIGN-IN
 \*------------------------------------*/
-/* line 159, ../compass/global.scss */
+/* line 163, ../compass/global.scss */
 .sign-in {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 164, ../compass/global.scss */
+/* line 168, ../compass/global.scss */
 .sign-in .sign-in-block {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 168, ../compass/global.scss */
+/* line 172, ../compass/global.scss */
 .sign-in .sign-in-block h5 {
   margin-top: -75px;
 }
@@ -183,31 +188,41 @@ a:hover, a:focus, a:visited {
 /*------------------------------------*\
     #ACCUEIL-ETUDIANT
 \*------------------------------------*/
-/* line 177, ../compass/global.scss */
+/* line 181, ../compass/global.scss */
 .etudiant {
   margin-top: 50px;
+}
+/* line 185, ../compass/global.scss */
+.etudiant .etudiant-block h1 {
+  text-transform: none;
+}
+/* line 188, ../compass/global.scss */
+.etudiant .etudiant-block .table input {
+  text-align: center;
+  width: 75px;
+  margin-right: 15px;
 }
 
 /*------------------------------------*\
     #ACCUEIL-ENSEIGNANT
 \*------------------------------------*/
-/* line 184, ../compass/global.scss */
+/* line 200, ../compass/global.scss */
 .enseignant {
   margin-top: 50px;
 }
-/* line 188, ../compass/global.scss */
+/* line 204, ../compass/global.scss */
 .enseignant .enseignant-block .btn {
   padding: 10px 25px;
   margin-top: 0;
   margin-left: 25px;
 }
-/* line 194, ../compass/global.scss */
+/* line 210, ../compass/global.scss */
 .enseignant .enseignant-block #etudiant,
 .enseignant .enseignant-block #promotion,
 .enseignant .enseignant-block #controle {
   margin-top: 25px;
 }
-/* line 199, ../compass/global.scss */
+/* line 215, ../compass/global.scss */
 .enseignant .enseignant-block #etudiant input,
 .enseignant .enseignant-block #promotion input,
 .enseignant .enseignant-block #controle input {

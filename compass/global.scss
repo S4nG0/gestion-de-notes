@@ -153,6 +153,10 @@ a {
     font-size: 85%;
 }
 
+.text-italic {
+    font-style: italic;
+}
+
 /*------------------------------------*\
     #SIGN-IN
 \*------------------------------------*/
@@ -176,6 +180,18 @@ a {
 \*------------------------------------*/
 .etudiant {
     margin-top: 50px;
+
+    .etudiant-block {
+        h1 {text-transform: none;}
+
+        .table {
+            input {
+                text-align: center;
+                width: 75px;
+                margin-right: 15px;
+            }
+        }
+    }
 }
 
 /*------------------------------------*\

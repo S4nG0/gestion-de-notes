@@ -66,10 +66,6 @@
                                     <td>/20</td>
                                 </tr>
 
-                                <!-- INPUT A UTILISER PR MODIF NOTES -->
-                                <!-- <input type="text" name="note" id="note" maxlength="5" value="12"> -->
-
-
                             </tbody>
                         </table>
                     </div>
