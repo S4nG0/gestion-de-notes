@@ -1,0 +1,11 @@
+@mixin rotate($deg) {
+    @include transform(rotate(#{$deg}deg));
+}
+
+@mixin scaleY($per) {
+    @include transform(scaleY(#{$per}));
+}
+
+@mixin translateZ($point) {
+    @include transform(translateZ(#{$point}));
+}
