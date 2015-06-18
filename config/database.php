@@ -1,5 +1,11 @@
 <?php
-$mysqli = new mysqli('localhost', 'root', '', 'projetphp_sql');
+
+$server = "localhost";
+$username = "root";
+$password = "";
+$database = "projetphp_sql";
+
+$mysqli = new mysqli($server, $username, $password, $database);
 
 if ($mysqli->connect_error) {
     die('Erreur de connexion (' . $mysqli->connect_errno . ') '
