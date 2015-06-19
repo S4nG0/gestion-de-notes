@@ -303,7 +303,7 @@ a:hover, a:focus {
 .add-etudiant select,
 .add-enseignant select,
 .add-module select {
-  width: 50%;
+  width: 100%;
   float: left;
 }
 /* line 286, ../compass/global.scss */

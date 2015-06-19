@@ -15,6 +15,7 @@ if((isset($_POST['nom']) && !empty($_POST['nom'])) && (isset($_POST['prenom']) &
     $pseudo=$administration->genererPseudo($nom,$prenom);
     $password=hash('sha256',$pseudo);
     $administration->ajouterEnseignant($module,$nom,$prenom,$adresse,$code_postal,$ville,$pseudo,$password);
+    header('location:add-enseignant.php');
 }else {
     ?>
 
