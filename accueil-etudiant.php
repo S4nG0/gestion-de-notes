@@ -13,6 +13,7 @@ if(!isset($_SESSION['personne'])){
 include 'header.php';
 
 $etudiant = new Etudiant();
+$ues = $etudiant->etudiant['UEs'];
 
 ?>
 <div class="container etudiant">
@@ -25,35 +26,53 @@ $etudiant = new Etudiant();
                 <h2>Mes notes :</h2>
             </div>
         </div>
-
+        
+        <?php foreach($ues as $UE){ 
+           
+            $taille_module = sizeof($UE) - 4;
+            
+        ?>
         <div class="row">
             <div class="col-sm-12">
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
                             <tr>
-                                <td>UE11 : Accueil</td>
+                                <td><?php echo $UE['code'] ." : ". $UE['nom']; ?></td>
                             </tr>
                         </thead>
                         <tbody>
+                            <?php 
+                                for($i = 0; $i < $taille_module; $i++){
+                            ?>
                             <tr>
-                                <td>Mathématiques ou Economie</td>
-                                <td align="right">18/20</td>
+                                <td><?php echo $UE[$i]['nom']; ?></td>
+                                <td align="right"><?php
+                                
+                                $taille_epreuve = sizeof($UE[$i])-5;
+                                //On va calculer la moyenne
+                                $total = 0;
+                                $note = 0;
+                                for($j = 0; $j < $taille_epreuve; $j++){
+                                    $note += $UE[$i][$j]['coefficient'] * $UE[$i][$j]['note']['note'];
+                                    $total ++;
+                                }
+                                    $note = $note/$total;
+                                    echo $note.'/20';
+                                
+                                
+                                ?></td>
                             </tr>
-                            <tr>
-                                <td>Statistique descriptive 1</td>
-                                <td align="right">15/20</td>
-                            </tr>
-                            <tr>
-                                <td>Projet personnel et professionnel</td>
-                                <td align="right">20/20</td>
-                            </tr>
+                            
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
 
+            <?php } ?>
+        
         <div class="row">
             <div class="col-sm-12">
                 <div class="table-responsive">
