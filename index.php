@@ -4,19 +4,19 @@ include 'config/database.php';
 $error = false;
 if(isset($_SESSION['personne'])){
     switch($_SESSION['personne']->statut) {
-            case "etudiant" : 
+            case "etudiant" :
                 header('Location: accueil-etudiant.php');
                 break;
-            case "administratif" : 
+            case "administratif" :
                 header('Location: accueil-administratif.php');
                 break;
-            case "enseignant" : 
+            case "enseignant" :
                 header('Location: accueil-enseignant.php');
                 break;
             default :
                 header('Location: erreur-statut.php');
-                break;            
-        } 
+                break;
+        }
 }
 
 include 'header.php';
@@ -31,18 +31,18 @@ if( (isset($_POST['identifiant']) && !empty($_POST['identifiant'])) && (isset($_
     }else{
         $_SESSION['personne'] = $personne;
         switch($personne->statut) {
-            case "etudiant" : 
+            case "etudiant" :
                 header('Location: accueil-etudiant.php');
                 break;
-            case "administratif" : 
+            case "administratif" :
                 header('Location: accueil-administratif.php');
                 break;
-            case "enseignant" : 
+            case "enseignant" :
                 header('Location: accueil-enseignant.php');
                 break;
             default :
                 header('Location: erreur-statut.php');
-                break;            
+                break;
         }
         //On redirige sur la page du statut!!!
     }
@@ -69,7 +69,7 @@ if( (isset($_POST['identifiant']) && !empty($_POST['identifiant'])) && (isset($_
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                         <label for="password">Mot de passe</label>
-                        <input class="text-center" type="text" name="password" id="password"
+                        <input class="text-center" type="password" name="password" id="password"
                                placeholder="Votre mot de passe">
                     </div>
                 </div>
