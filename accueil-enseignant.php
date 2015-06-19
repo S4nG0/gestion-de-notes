@@ -1,6 +1,6 @@
 <?php
 
-include 'config/database.php';
+include 'config/config.php';
 
 if(!isset($_SESSION['personne'])){
         header('Location: index.php');
