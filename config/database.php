@@ -33,9 +33,6 @@ if ($mysqli->connect_error) {
  * SELECT * FROM personne INNER JOIN promotion ON personne.idPromotion = promotion.idPromotion AND promotion.nom = ""
  * 
  * 
- * 
- * 
- * 
  */
 
 ?>
