@@ -1,7 +1,7 @@
 <?php
 
 include 'header.php';
-include 'config/database.php';
+include 'config/config.php';
 
 ?>
 <div class="container etudiant">
