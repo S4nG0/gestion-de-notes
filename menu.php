@@ -3,6 +3,9 @@
     <hr>
     <ul class="nav navmenu-nav">
         <li>
+            <a href="accueil-administratif.php">Accueil</a>
+        </li>
+        <li>
             <a href="add-etudiant.php">Enregistrer un étudiant</a>
         </li>
         <li>
