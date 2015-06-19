@@ -266,9 +266,12 @@ a {
 /*------------------------------------*\
     #ADD-ETUDIANT
 \*------------------------------------*/
-.add-etudiant {
+.add-etudiant,
+.add-enseignant,
+.add-module {
     label {
         margin-top: 0;
+        text-align: right;
     }
 
     input {
