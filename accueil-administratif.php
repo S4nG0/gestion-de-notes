@@ -25,7 +25,7 @@
     <?php include 'menu.php'; ?>
 
     <div class="row text-center">
-        <a class="bottom-link" href="index.php">Retour à l'écran de connexion</a>
+        <a class="bottom-link" href="deconnexion.php">Retour à l'écran de connexion</a>
     </div>
 </div>
 
