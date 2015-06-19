@@ -3,7 +3,7 @@
 $server = "localhost";
 $username = "root";
 $password = "";
-$database = "projetphp_sql";
+$database = "phpspe_gestionDeNotes";
 
 $mysqli = new mysqli($server, $username, $password, $database);
 
