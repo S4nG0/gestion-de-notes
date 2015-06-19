@@ -7,9 +7,11 @@
  */
 
    Class Module{
-       private  $id;
+       private  $idModule;
        private  $nom;
-       private  $coef;
+       private  $code;
+       private  $coefficient;
+       private  $idUE;
 
        /**
         * @return mixed

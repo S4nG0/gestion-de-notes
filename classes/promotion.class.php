@@ -1,10 +1,11 @@
 <?php
 
-class Promotions {
+class Promotion {
 
-    private $id;
+    private $idPromotion;
     private $nom;
     private $annee;
+    private $idDepartement;
 
     public function Promotions(){
 

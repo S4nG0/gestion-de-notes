@@ -7,8 +7,10 @@
  */
 
     Class UniteEnseignement{
-        private  $id;
+        private  $idUE;
+        private  $idDepartement;
         private  $nom;
+        private  $code;
 
         /**
          * @return mixed
