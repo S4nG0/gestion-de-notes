@@ -19,6 +19,9 @@
         private  $pseudo;
         private  $password;
 
+        public function Personne(){
+
+        }
         /**
          * @return mixed
          */
