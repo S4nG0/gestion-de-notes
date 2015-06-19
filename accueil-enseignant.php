@@ -14,9 +14,9 @@ if(isset($_POST)){
 
 }
 else {
-    include 'header.php';
+include 'header.php';
 
-    ?>
+?>
     <div class="container enseignant">
         <div class="enseignant-block">
             <div class="row text-center">
@@ -148,7 +148,6 @@ else {
                 </div>
             </div>
 
-<<<<<<< HEAD
         <!-- block:Controle -->
         <div class="row" id="controle">
             <div class="controle-block">
@@ -157,17 +156,6 @@ else {
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
-=======
-            <!-- block:Controle -->
-            <div class="row" id="controle">
-                <div class="controle-block">
-                    <div class="col-sm-12">
-                        <h2>SID-1</h2>
-
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
->>>>>>> bf8e6d1a5883d2ad8c4ea36c3046d3cec06f6d88
                                 <tr>
                                     <td>Nom</td>
                                     <td>Prénom</td>
@@ -196,7 +184,6 @@ else {
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
             </div>
             <div class="classe-block">
                 <div class="col-sm-12">
@@ -204,15 +191,6 @@ else {
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
-=======
-                <div class="classe-block">
-                    <div class="col-sm-12">
-                        <h2>SID-2</h2>
-
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
->>>>>>> bf8e6d1a5883d2ad8c4ea36c3046d3cec06f6d88
                                 <tr>
                                     <td>Nom</td>
                                     <td>Prénom</td>
