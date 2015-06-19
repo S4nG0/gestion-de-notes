@@ -1,5 +1,16 @@
-<?php include 'header.php'; ?>
-
+<?php
+include 'header.php';
+include 'classes/administration.class.php';
+$administration=new Administration();
+$resUE=$administration->recupereUE();
+if((isset($_POST['nom'])) && !empty($_POST['nom']) && (isset($_POST['code'])) && !empty($_POST['code']) &&
+   (isset($_POST['coefficient'])) && !empty($_POST['coefficient']) && (isset($_POST['ue'])) && !empty($_POST['ue'])){
+    $nom=$_POST['nom'];
+    $code=$_POST['code'];
+    $coefficient=$_POST['coefficient'];
+    $ue=$_POST['ue'];
+}
+?>
 <div class="container admin">
     <div class="row text-center">
         <h1>Espace Administration</h1>
@@ -39,9 +50,9 @@
                     <label class="col-sm-4 control-label" for="ue">Unité d'enseignement</label>
                     <div class="col-sm-6">
                         <select id="ue" name="ue">
-                            <option value="1">UE11</option>
-                            <option value="2">UE12</option>
-                            <option value="3">UE13</option>
+                            <?php while($ue= $resUE->fetch_object()){?>
+                                <option value="<?php echo $ue->idUE; ?>"><?php echo $ue->code; ?></option>
+                            <?php } ?>
                         </select>
                     </div>
                 </div>
