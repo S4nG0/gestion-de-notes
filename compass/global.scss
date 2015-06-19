@@ -82,7 +82,7 @@ input {
     }
 
     &:focus {
-        @include box-shadow(0 0 4px 0 rgba(102,102,102,0.6));
+        @include box-shadow(0 0 4px 0 rgba(102, 102, 102, 0.6));
     }
 }
 
