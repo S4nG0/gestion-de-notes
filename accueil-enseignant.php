@@ -146,7 +146,7 @@ include 'header.php';
         <div class="row" id="controle">
             <div class="controle-block">
                 <div class="col-sm-12">
-                    <h2>SID-1</h2>
+                    <h2>Mathématiques ou Economie</h2>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -180,7 +180,7 @@ include 'header.php';
             </div>
             <div class="classe-block">
                 <div class="col-sm-12">
-                    <h2>SID-2</h2>
+                    <h2>Statistique descriptive 1</h2>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
