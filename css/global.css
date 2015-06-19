@@ -81,12 +81,18 @@ input {
   transition: all 300ms ease-in-out;
 }
 /* line 79, ../compass/global.scss */
-input:focus {
+input:hover, input:focus {
   outline: none;
   border-color: #6d6d6d;
 }
+/* line 84, ../compass/global.scss */
+input:focus {
+  -moz-box-shadow: 0 0 4px 0 rgba(102, 102, 102, 0.6);
+  -webkit-box-shadow: 0 0 4px 0 rgba(102, 102, 102, 0.6);
+  box-shadow: 0 0 4px 0 rgba(102, 102, 102, 0.6);
+}
 
-/* line 85, ../compass/global.scss */
+/* line 89, ../compass/global.scss */
 select {
   display: inline-block;
   min-height: 20px;
@@ -97,31 +103,31 @@ select {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 92, ../compass/global.scss */
+/* line 96, ../compass/global.scss */
 select:hover, select:focus {
   border-color: #6d6d6d;
   outline: 0;
 }
-/* line 97, ../compass/global.scss */
+/* line 101, ../compass/global.scss */
 select option {
   border-color: #9d9d9d;
 }
 
-/* line 103, ../compass/global.scss */
+/* line 107, ../compass/global.scss */
 .table > thead {
   font-size: 14px;
   font-weight: 600;
 }
-/* line 107, ../compass/global.scss */
+/* line 111, ../compass/global.scss */
 .table > thead > tr > td {
   vertical-align: middle;
 }
-/* line 114, ../compass/global.scss */
+/* line 118, ../compass/global.scss */
 .table > tbody > tr > td {
   vertical-align: middle;
 }
 
-/* line 123, ../compass/global.scss */
+/* line 127, ../compass/global.scss */
 a {
   display: block;
   color: #9d9d9d !important;
@@ -130,57 +136,88 @@ a {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 128, ../compass/global.scss */
+/* line 132, ../compass/global.scss */
 a:hover, a:focus {
   color: #6d6d6d !important;
   text-decoration: none;
 }
 
-/* line 134, ../compass/global.scss */
+/* line 138, ../compass/global.scss */
 .bottom-link {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-/* line 139, ../compass/global.scss */
+/* line 143, ../compass/global.scss */
 .btn {
   margin-top: 25px;
   border-radius: 0px;
   border-color: #9d9d9d;
   transition: all 300ms ease-in-out;
 }
-/* line 145, ../compass/global.scss */
+/* line 149, ../compass/global.scss */
 .btn:hover, .btn:focus {
   color: #9d9d9d;
   border-color: #6d6d6d;
   background-color: transparent;
 }
 
-/* line 152, ../compass/global.scss */
+/* line 156, ../compass/global.scss */
 .small {
   font-size: 85%;
 }
 
-/* line 156, ../compass/global.scss */
+/* line 160, ../compass/global.scss */
 .text-italic {
   font-style: italic;
+}
+
+/* line 164, ../compass/global.scss */
+::-webkit-input-placeholder {
+  color: #9d9d9d;
+  font-style: italic;
+}
+
+/* line 169, ../compass/global.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #9d9d9d;
+  font-style: italic;
+}
+
+/* line 174, ../compass/global.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #9d9d9d;
+  font-style: italic;
+}
+
+/* line 179, ../compass/global.scss */
+:-ms-input-placeholder {
+  color: #9d9d9d;
+  font-style: italic;
+}
+
+/* line 184, ../compass/global.scss */
+.error {
+  color: red;
 }
 
 /*------------------------------------*\
     #SIGN-IN
 \*------------------------------------*/
-/* line 163, ../compass/global.scss */
+/* line 191, ../compass/global.scss */
 .sign-in {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 168, ../compass/global.scss */
+/* line 196, ../compass/global.scss */
 .sign-in .sign-in-block {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 172, ../compass/global.scss */
+/* line 200, ../compass/global.scss */
 .sign-in .sign-in-block h5 {
   margin-top: -75px;
 }
@@ -188,15 +225,15 @@ a:hover, a:focus {
 /*------------------------------------*\
     #ACCUEIL-ETUDIANT
 \*------------------------------------*/
-/* line 181, ../compass/global.scss */
+/* line 209, ../compass/global.scss */
 .etudiant {
   margin-top: 50px;
 }
-/* line 185, ../compass/global.scss */
+/* line 213, ../compass/global.scss */
 .etudiant .etudiant-block h1 {
   text-transform: none;
 }
-/* line 188, ../compass/global.scss */
+/* line 216, ../compass/global.scss */
 .etudiant .etudiant-block .table input {
   text-align: center;
   width: 75px;
@@ -206,28 +243,28 @@ a:hover, a:focus {
 /*------------------------------------*\
     #ACCUEIL-ENSEIGNANT
 \*------------------------------------*/
-/* line 200, ../compass/global.scss */
+/* line 228, ../compass/global.scss */
 .enseignant {
   margin-top: 50px;
 }
-/* line 203, ../compass/global.scss */
+/* line 231, ../compass/global.scss */
 .enseignant label {
   display: inline-block;
   margin-right: 25px;
 }
-/* line 209, ../compass/global.scss */
+/* line 237, ../compass/global.scss */
 .enseignant .enseignant-block .btn {
   padding: 10px 25px;
   margin-top: 0;
   margin-left: 25px;
 }
-/* line 215, ../compass/global.scss */
+/* line 243, ../compass/global.scss */
 .enseignant .enseignant-block #etudiant,
 .enseignant .enseignant-block #classe,
 .enseignant .enseignant-block #controle {
   margin-top: 25px;
 }
-/* line 220, ../compass/global.scss */
+/* line 248, ../compass/global.scss */
 .enseignant .enseignant-block #etudiant input,
 .enseignant .enseignant-block #classe input,
 .enseignant .enseignant-block #controle input {
@@ -241,15 +278,50 @@ a:hover, a:focus {
 /*------------------------------------*\
     #ACCUEIL-ADMIN
 \*------------------------------------*/
-/* line 234, ../compass/global.scss */
+/* line 262, ../compass/global.scss */
 .admin {
   margin-top: 50px;
 }
 
 /*------------------------------------*\
+    #ADD-ETUDIANT
+\*------------------------------------*/
+/* line 270, ../compass/global.scss */
+.add-etudiant label {
+  margin-top: 0;
+}
+/* line 274, ../compass/global.scss */
+.add-etudiant input {
+  width: 100%;
+}
+/* line 278, ../compass/global.scss */
+.add-etudiant select {
+  width: 50%;
+  float: left;
+}
+/* line 283, ../compass/global.scss */
+.add-etudiant input.btn {
+  display: inline-block;
+  width: 150px;
+  margin-right: 15px;
+  background-color: transparent;
+  color: #9d9d9d;
+  border-color: #9d9d9d;
+}
+/* line 291, ../compass/global.scss */
+.add-etudiant input.btn:hover, .add-etudiant input.btn:focus {
+  color: #6d6d6d;
+  border-color: #6d6d6d;
+}
+/* line 296, ../compass/global.scss */
+.add-etudiant input.btn:last-child {
+  margin-right: 0;
+}
+
+/*------------------------------------*\
     #SINGLE-ETUDIANT
 \*------------------------------------*/
-/* line 241, ../compass/global.scss */
+/* line 305, ../compass/global.scss */
 .buttons {
   list-style-type: none;
   margin: 0;
@@ -258,21 +330,21 @@ a:hover, a:focus {
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 249, ../compass/global.scss */
+/* line 313, ../compass/global.scss */
 .buttons li {
   display: inline-block;
   margin-right: 15px;
 }
-/* line 253, ../compass/global.scss */
+/* line 317, ../compass/global.scss */
 .buttons li:last-child {
   margin-right: 0;
 }
-/* line 257, ../compass/global.scss */
+/* line 321, ../compass/global.scss */
 .buttons li a {
   text-decoration: none;
 }
 
-/* line 264, ../compass/global.scss */
+/* line 328, ../compass/global.scss */
 #add-notes-block input {
   text-align: center;
 }
@@ -280,18 +352,18 @@ a:hover, a:focus {
 /*------------------------------------*\
     #OFFCANVAS MENU
 \*------------------------------------*/
-/* line 272, ../compass/global.scss */
+/* line 336, ../compass/global.scss */
 h3 {
   font-size: 22px;
   line-height: 22px;
   padding: 15px;
 }
 
-/* line 278, ../compass/global.scss */
+/* line 342, ../compass/global.scss */
 .navbar-toggle {
   float: left;
   margin-left: 15px;
-  padding: 5px 15px;
+  padding: 10px 15px;
   color: #9d9d9d;
   background-color: transparent;
   -moz-transition: all 300ms ease-in-out;
@@ -299,7 +371,11 @@ h3 {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-/* line 286, ../compass/global.scss */
+/* line 350, ../compass/global.scss */
+.navbar-toggle span {
+  text-transform: uppercase;
+}
+/* line 354, ../compass/global.scss */
 .navbar-toggle:hover, .navbar-toggle:focus {
   color: #6d6d6d;
   background-color: transparent !important;
@@ -307,22 +383,34 @@ h3 {
 }
 
 @media (min-width: 0) {
-  /* line 294, ../compass/global.scss */
+  /* line 362, ../compass/global.scss */
   .navbar-toggle {
     display: block;
     /* force showing the toggle */
   }
 }
 @media (min-width: 992px) {
-  /* line 300, ../compass/global.scss */
+  /* line 368, ../compass/global.scss */
   body {
     padding: 0;
   }
 
-  /* line 303, ../compass/global.scss */
+  /* line 371, ../compass/global.scss */
   .navbar {
     right: auto;
     background: none;
     border: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 380, ../compass/global.scss */
+  .add-etudiant input.btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+  /* line 385, ../compass/global.scss */
+  .add-etudiant input.btn:last-child {
+    margin-right: auto;
   }
 }

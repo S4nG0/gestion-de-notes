@@ -8,16 +8,16 @@
     <div class="buttons-block">
         <ul class="buttons">
             <li>
-                <a class="btn btn-default" href="admin/add-etudiant.php">Enregistrer un étudiant</a>
+                <a class="btn btn-default" href="add-etudiant.php">Enregistrer un étudiant</a>
             </li>
             <li>
-                <a class="btn btn-default" href="admin/add-enseignant.php">Enregistrer un enseignant</a>
+                <a class="btn btn-default" href="add-enseignant.php">Enregistrer un enseignant</a>
             </li>
             <li>
-                <a class="btn btn-default" href="admin/add-module.php">Ajouter un module</a>
+                <a class="btn btn-default" href="add-module.php">Ajouter un module</a>
             </li>
             <li>
-                <a class="btn btn-default" href="admin/view-bulletin.php">Voir un bulletin de notes</a>
+                <a class="btn btn-default" href="view-bulletin.php">Voir un bulletin de notes</a>
             </li>
         </ul>
     </div>
