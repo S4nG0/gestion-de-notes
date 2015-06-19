@@ -5,7 +5,7 @@ include 'config/database.php';
 if(!isset($_SESSION['personne'])){
         header('Location: index.php');
 }else{
-    if($_SESSION['personne']->statut != "etudiant"){
+    if($_SESSION['personne']->statut != "enseignant"){
         header('Location: index.php');
     }
 }
