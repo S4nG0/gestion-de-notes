@@ -26,10 +26,12 @@ class Administration extends Personne {
                           NULL,'".$nom."','".$prenom."','".$adresse."',".$code_postal.",'".$ville."','etudiant',
                           '".$pseudo."','".$password."')");
     }
-    public function ajouterEnseignant($idPromotion,$nom,$prenom,$adresse,$code_postal,$ville,$pseudo,$password){
-        $this->db->query("INSERT INTO personne(idPersonne, idPromotion, idDepartement, nom, prenom,
-                          adresse, code_postal, ville, statut, pseudo, password) VALUES ('',".$idPromotion.",
-                          NULL,'".$nom."','".$prenom."','".$adresse."',".$code_postal.",'".$ville."','etudiant',
+    public function ajouterEnseignant($module,$nom,$prenom,$adresse,$code_postal,$ville,$pseudo,$password){
+        $this->db->query("INSERT INTO personne(idDepartement, nom, prenom,
+                          adresse, code_postal, ville, statut, pseudo, password) VALUES (
+                          NULL,'".$nom."','".$prenom."','".$adresse."',".$code_postal.",'".$ville."','enseignant',
                           '".$pseudo."','".$password."')");
+        $idPersonne=$this->db->insert_id;
+        $this->db->query("INSERT INTO enseigne(idPersonne, idModule) VALUES (".$idPersonne.",".$module.")");
     }
 }
