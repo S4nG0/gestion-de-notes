@@ -2,8 +2,8 @@
 
 $lato: 'Lato', sans-serif;
 $merri: 'Merriweather', serif;
-$gris-fonce: #cccccc;
-$gris-clair: #6d6d6d;
+$gris-fonce: #6d6d6d;
+$gris-clair: #9d9d9d;
 $noir: #343434;
 
 * {
@@ -122,10 +122,11 @@ select {
 
 a {
     display: block;
-    text-decoration: underline;
+    color: $gris-clair !important;
+    @include transition(all 300ms ease-in-out);
 
-    &:hover, &:focus, &:visited {
-        color: $gris-clair;
+    &:hover, &:focus {
+        color: $gris-fonce !important;
         text-decoration: none;
     }
 }
@@ -228,6 +229,13 @@ a {
 }
 
 /*------------------------------------*\
+    #ACCUEIL-ADMIN
+\*------------------------------------*/
+.admin {
+    margin-top: 50px;
+}
+
+/*------------------------------------*\
     #SINGLE-ETUDIANT
 \*------------------------------------*/
 .buttons {
@@ -255,5 +263,46 @@ a {
 #add-notes-block {
     input {
         text-align: center;
+    }
+}
+
+/*------------------------------------*\
+    #OFFCANVAS MENU
+\*------------------------------------*/
+h3 {
+    font-size: 22px;
+    line-height: 22px;
+    padding: 15px;
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
+    padding: 5px 15px;
+    color: $gris-clair;
+    background-color: transparent;
+    @include transition(all 300ms ease-in-out);
+
+    &:hover, &:focus {
+        color: $gris-fonce;
+        background-color: transparent !important;
+        border-color: $gris-fonce;
+    }
+}
+
+@media (min-width: 0) {
+    .navbar-toggle {
+        display: block; /* force showing the toggle */
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        padding: 0;
+    }
+    .navbar {
+        right: auto;
+        background: none;
+        border: none;
     }
 }
