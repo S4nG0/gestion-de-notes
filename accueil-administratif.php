@@ -1,4 +1,18 @@
-<?php include 'header.php'; ?>
+<?php 
+include 'config/database.php';
+
+if(!isset($_SESSION['personne'])){
+        header('Location: index.php');
+}else{
+    if($_SESSION['personne']->statut != "administratif"){
+        header('Location: index.php');
+    }
+}
+
+include 'header.php';
+
+
+?>
 
 <div class="container admin">
     <div class="row text-center">
