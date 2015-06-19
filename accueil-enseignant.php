@@ -14,8 +14,7 @@ if(isset($_POST)){
 
 }
 else {
-include 'header.php';
-
+    include 'header.php';
 ?>
     <div class="container enseignant">
         <div class="enseignant-block">
