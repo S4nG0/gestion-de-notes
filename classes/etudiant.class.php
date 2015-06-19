@@ -1,5 +1,4 @@
 <?php
-include('personne.php');
 
 class Etudiant extends Personne{
 
