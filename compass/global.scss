@@ -264,9 +264,11 @@ a {
 }
 
 /*------------------------------------*\
-    #ADD-ETUDIANT
+    #SUB-PAGES FOR ADMIN
 \*------------------------------------*/
-.add-etudiant {
+.add-etudiant,
+.add-enseignant,
+.add-module {
     label {
         margin-top: 0;
     }
