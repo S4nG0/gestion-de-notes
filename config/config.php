@@ -2,17 +2,9 @@
 
 session_start();
 
-$server = "localhost";
-$username = "root";
-$password = "";
-$database = "phpspe_gestionDeNotes";
-
-$mysqli = new mysqli($server, $username, $password, $database);
-
-if ($mysqli->connect_error) {
-    die('Erreur de connexion (' . $mysqli->connect_errno . ') '
-            . $mysqli->connect_error);
-}
+spl_autoload_register(function ($class) {
+    include 'classes/' . $class . '.class.php';
+});
 
 
 

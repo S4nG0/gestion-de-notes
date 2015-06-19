@@ -1,6 +1,6 @@
 <?php
 
-include 'config/database.php';
+include 'config/config.php';
 
 if(!isset($_SESSION['personne'])){
         header('Location: index.php');
@@ -11,6 +11,8 @@ if(!isset($_SESSION['personne'])){
 }
 
 include 'header.php';
+
+$etudiant = new Etudiant();
 
 ?>
 <div class="container etudiant">
