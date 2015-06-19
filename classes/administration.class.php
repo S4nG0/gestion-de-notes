@@ -17,6 +17,9 @@ class Administration extends Personne {
     public function recupereModule(){
         return $this->db->query("SELECT idModule,nom FROM module");
     }
+    public function recupereUE(){
+        return $this->db->query("SELECT idUE,code FROM unite_enseignement");
+    }
     public function genererPseudo($nom,$prenom){
         return strtolower(substr($prenom,0,1).".".$nom);
     }
@@ -33,5 +36,9 @@ class Administration extends Personne {
                           '".$pseudo."','".$password."')");
         $idPersonne=$this->db->insert_id;
         $this->db->query("INSERT INTO enseigne(idPersonne, idModule) VALUES (".$idPersonne.",".$module.")");
+    }
+    public function ajouterModule($nom,$idDepartement,$code){
+        $this->db->query("INSERT INTO unite_enseignement(idUE, nom, idDepartement, code)
+                          VALUES ('','".$nom."','".$idDepartement."','".$code."')");
     }
 }
