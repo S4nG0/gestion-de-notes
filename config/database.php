@@ -2,7 +2,7 @@
 
 session_start();
 
-$server = "192.168.7.150";
+$server = "localhost";
 $username = "root";
 $password = "";
 $database = "phpspe_gestionDeNotes";
