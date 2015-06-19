@@ -76,9 +76,13 @@ input {
     border: 1px solid $gris-clair;
     @include transition(all 300ms ease-in-out);
 
-    &:focus {
+    &:hover, &:focus {
         outline: none;
         border-color: $gris-fonce;
+    }
+
+    &:focus {
+        @include box-shadow(0 0 4px 0 rgba(102,102,102,0.6));
     }
 }
 
@@ -155,6 +159,30 @@ a {
 
 .text-italic {
     font-style: italic;
+}
+
+::-webkit-input-placeholder {
+   color: $gris-clair;
+   font-style: italic;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $gris-clair;
+   font-style: italic;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $gris-clair;
+   font-style: italic;
+}
+
+:-ms-input-placeholder {
+   color: $gris-clair;
+   font-style: italic;
+}
+
+.error {
+    color: red;
 }
 
 /*------------------------------------*\
@@ -236,6 +264,42 @@ a {
 }
 
 /*------------------------------------*\
+    #ADD-ETUDIANT
+\*------------------------------------*/
+.add-etudiant {
+    label {
+        margin-top: 0;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    select {
+        width: 50%;
+        float: left;
+    }
+
+    input.btn {
+        display: inline-block;
+        width: 150px;
+        margin-right: 15px;
+        background-color: transparent;
+        color: $gris-clair;
+        border-color: $gris-clair;
+
+        &:hover, &:focus {
+            color: $gris-fonce;
+            border-color: $gris-fonce;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+/*------------------------------------*\
     #SINGLE-ETUDIANT
 \*------------------------------------*/
 .buttons {
@@ -278,10 +342,14 @@ h3 {
 .navbar-toggle {
     float: left;
     margin-left: 15px;
-    padding: 5px 15px;
+    padding: 10px 15px;
     color: $gris-clair;
     background-color: transparent;
     @include transition(all 300ms ease-in-out);
+
+    span {
+        text-transform: uppercase;
+    }
 
     &:hover, &:focus {
         color: $gris-fonce;
@@ -304,5 +372,19 @@ h3 {
         right: auto;
         background: none;
         border: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .add-etudiant {
+        input.btn {
+            display: block;
+            margin: 0 auto;
+            margin-top: 25px;
+
+            &:last-child {
+                margin-right: auto;
+            }
+        }
     }
 }
