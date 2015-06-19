@@ -2,16 +2,6 @@
 
 include 'config/database.php';
 
-if(!isset($_SESSION['personne'])){
-        header('Location: index.php');
-}else{
-    if($_SESSION['personne']->statut != "etudiant"){
-        header('Location: index.php');
-    }
-}
-
-include 'header.php';
-
 ?>
 <div class="container etudiant">
     <div class="etudiant-block">

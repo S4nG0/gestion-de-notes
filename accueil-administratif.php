@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'config/database.php';
 
 if(!isset($_SESSION['personne'])){
@@ -39,7 +39,7 @@ include 'header.php';
     <?php include 'menu.php'; ?>
 
     <div class="row text-center">
-        <a class="bottom-link" href="deconnexion.php">Retour à l'écran de connexion</a>
+        <a class="bottom-link" href="deconnexion.php">Se déconnecter</a>
     </div>
 </div>
 
