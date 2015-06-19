@@ -7,10 +7,12 @@
  */
 
     Class Epreuve {
-        private  $id;
-        private  $libelle;
+        private  $idEpreuve;
+        private  $idPromotion;
+        private  $coefficient;
+        private  $nom;
         private  $date;
-        private  $coef;
+        private  $idModule;
 
         /**
          * @return mixed

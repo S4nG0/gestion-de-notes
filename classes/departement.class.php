@@ -1,7 +1,7 @@
 <?php
 
 class Departement {
-    private $id;
+    private $idDepartement;
     private $nom;
 
     public function Departement(){

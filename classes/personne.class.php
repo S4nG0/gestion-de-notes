@@ -7,14 +7,17 @@
  */
 
     Class Personne{
-        private  $id;
+        private  $idPersonne;
+        private  $idDepartement;
+        private  $idPromotion;
         private  $nom;
         private  $prenom;
         private  $adresse;
-        private  $cp;
+        private  $code_postal;
         private  $ville;
+        private  $statut;
         private  $pseudo;
-        private  $mdp;
+        private  $password;
 
         /**
          * @return mixed

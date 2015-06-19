@@ -7,7 +7,8 @@
  */
 
 class Notes {
-    private $id;
+    private $idEpreuve;
+    private $idPersonne;
     private $note;
 
     public function Notes(){
