@@ -14,7 +14,7 @@ if(isset($_SESSION['personne'])){
                 header('Location: accueil-enseignant.php');
                 break;
             default :
-                header('Location: erreur-statut.php');
+                header('Location: error.php');
                 break;
         }
 }
