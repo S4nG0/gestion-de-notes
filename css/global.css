@@ -284,7 +284,7 @@ a:hover, a:focus {
 }
 
 /*------------------------------------*\
-    #SUB-PAGES FOR ADMIN
+    #ADD-ETUDIANT
 \*------------------------------------*/
 /* line 272, ../compass/global.scss */
 .add-etudiant label,
@@ -293,20 +293,20 @@ a:hover, a:focus {
   margin-top: 0;
   text-align: right;
 }
-
+/* line 277, ../compass/global.scss */
 .add-etudiant input,
 .add-enseignant input,
 .add-module input {
   width: 100%;
 }
-
+/* line 281, ../compass/global.scss */
 .add-etudiant select,
 .add-enseignant select,
 .add-module select {
   width: 50%;
   float: left;
 }
-
+/* line 286, ../compass/global.scss */
 .add-etudiant input.btn,
 .add-enseignant input.btn,
 .add-module input.btn {
@@ -317,7 +317,7 @@ a:hover, a:focus {
   color: #9d9d9d;
   border-color: #9d9d9d;
 }
-<<<<<<< HEAD
+/* line 294, ../compass/global.scss */
 .add-etudiant input.btn:hover, .add-etudiant input.btn:focus,
 .add-enseignant input.btn:hover,
 .add-enseignant input.btn:focus,
@@ -326,7 +326,7 @@ a:hover, a:focus {
   color: #6d6d6d;
   border-color: #6d6d6d;
 }
-
+/* line 299, ../compass/global.scss */
 .add-etudiant input.btn:last-child,
 .add-enseignant input.btn:last-child,
 .add-module input.btn:last-child {
@@ -336,7 +336,7 @@ a:hover, a:focus {
 /*------------------------------------*\
     #SINGLE-ETUDIANT
 \*------------------------------------*/
-
+/* line 308, ../compass/global.scss */
 .buttons {
   list-style-type: none;
   margin: 0;
@@ -345,25 +345,21 @@ a:hover, a:focus {
   text-align: center;
   margin-bottom: 50px;
 }
-
+/* line 316, ../compass/global.scss */
 .buttons li {
   display: inline-block;
   margin-right: 15px;
 }
-
-/* line 323, ../compass/global.scss */
-=======
 /* line 320, ../compass/global.scss */
 .buttons li:last-child {
   margin-right: 0;
 }
 /* line 324, ../compass/global.scss */
->>>>>>> S4nG0
 .buttons li a {
   text-decoration: none;
 }
 
-
+/* line 331, ../compass/global.scss */
 #add-notes-block input {
   text-align: center;
 }
@@ -371,14 +367,14 @@ a:hover, a:focus {
 /*------------------------------------*\
     #OFFCANVAS MENU
 \*------------------------------------*/
-
+/* line 339, ../compass/global.scss */
 h3 {
   font-size: 22px;
   line-height: 22px;
   padding: 15px;
 }
 
-
+/* line 345, ../compass/global.scss */
 .navbar-toggle {
   float: left;
   margin-left: 15px;
@@ -390,15 +386,11 @@ h3 {
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-
-/* line 356, ../compass/global.scss */
-=======
 /* line 353, ../compass/global.scss */
 .navbar-toggle span {
   text-transform: uppercase;
 }
 /* line 357, ../compass/global.scss */
->>>>>>> S4nG0
 .navbar-toggle:hover, .navbar-toggle:focus {
   color: #6d6d6d;
   background-color: transparent !important;
@@ -406,19 +398,19 @@ h3 {
 }
 
 @media (min-width: 0) {
-
+  /* line 365, ../compass/global.scss */
   .navbar-toggle {
     display: block;
     /* force showing the toggle */
   }
 }
 @media (min-width: 992px) {
-
+  /* line 371, ../compass/global.scss */
   body {
     padding: 0;
   }
 
-
+  /* line 374, ../compass/global.scss */
   .navbar {
     right: auto;
     background: none;
@@ -426,13 +418,13 @@ h3 {
   }
 }
 @media screen and (max-width: 768px) {
-
+  /* line 383, ../compass/global.scss */
   .add-etudiant input.btn {
     display: block;
     margin: 0 auto;
     margin-top: 25px;
   }
-
+  /* line 388, ../compass/global.scss */
   .add-etudiant input.btn:last-child {
     margin-right: auto;
   }
