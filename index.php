@@ -27,7 +27,7 @@ if( (isset($_POST['identifiant']) && !empty($_POST['identifiant'])) && (isset($_
     $password=$mysqli->real_escape_string($_POST['password']);
     $resPersonne=$mysqli->query("SELECT * FROM personne WHERE pseudo = '$identifiant'");
     $personne=$resPersonne->fetch_object();
-    if($password != $personne->password){
+    if(hash('sha256',$password) != $personne->password){
         $error = true;
     }else{
         $_SESSION['personne'] = $personne;
