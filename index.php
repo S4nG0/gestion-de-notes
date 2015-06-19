@@ -2,7 +2,7 @@
     <div class="container sign-in">
         <div class="sign-in-block">
             <div class="row text-center">
-                <h5>Bienvenue sur la gestion des notes de l'<strong>IUT C</strong>...</h2>
+                <h5>Bienvenue sur la gestion des notes de l'<strong>IUT C</strong>...</h5>
             </div>
             <div class="row text-center">
                 <h1>Connexion</h1>

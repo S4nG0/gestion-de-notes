@@ -74,7 +74,7 @@ label {
 /* line 74, ../compass/global.scss */
 input {
   padding: 10px 25px;
-  border: 1px solid #6d6d6d;
+  border: 1px solid #9d9d9d;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
@@ -83,7 +83,7 @@ input {
 /* line 79, ../compass/global.scss */
 input:focus {
   outline: none;
-  border-color: #cccccc;
+  border-color: #6d6d6d;
 }
 
 /* line 85, ../compass/global.scss */
@@ -91,7 +91,7 @@ select {
   display: inline-block;
   min-height: 20px;
   padding: 10px 25px;
-  border: 1px solid #6d6d6d;
+  border: 1px solid #9d9d9d;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
@@ -99,12 +99,12 @@ select {
 }
 /* line 92, ../compass/global.scss */
 select:hover, select:focus {
-  border-color: #cccccc;
+  border-color: #6d6d6d;
   outline: 0;
 }
 /* line 97, ../compass/global.scss */
 select option {
-  border-color: #6d6d6d;
+  border-color: #9d9d9d;
 }
 
 /* line 103, ../compass/global.scss */
@@ -124,40 +124,44 @@ select option {
 /* line 123, ../compass/global.scss */
 a {
   display: block;
-  text-decoration: underline;
+  color: #9d9d9d !important;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-/* line 127, ../compass/global.scss */
-a:hover, a:focus, a:visited {
-  color: #6d6d6d;
+/* line 128, ../compass/global.scss */
+a:hover, a:focus {
+  color: #6d6d6d !important;
   text-decoration: none;
 }
 
-/* line 133, ../compass/global.scss */
+/* line 134, ../compass/global.scss */
 .bottom-link {
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-/* line 138, ../compass/global.scss */
+/* line 139, ../compass/global.scss */
 .btn {
   margin-top: 25px;
   border-radius: 0px;
-  border-color: #6d6d6d;
+  border-color: #9d9d9d;
   transition: all 300ms ease-in-out;
 }
-/* line 144, ../compass/global.scss */
+/* line 145, ../compass/global.scss */
 .btn:hover, .btn:focus {
-  color: #6d6d6d;
-  border-color: #cccccc;
+  color: #9d9d9d;
+  border-color: #6d6d6d;
   background-color: transparent;
 }
 
-/* line 151, ../compass/global.scss */
+/* line 152, ../compass/global.scss */
 .small {
   font-size: 85%;
 }
 
-/* line 155, ../compass/global.scss */
+/* line 156, ../compass/global.scss */
 .text-italic {
   font-style: italic;
 }
@@ -165,18 +169,18 @@ a:hover, a:focus, a:visited {
 /*------------------------------------*\
     #SIGN-IN
 \*------------------------------------*/
-/* line 162, ../compass/global.scss */
+/* line 163, ../compass/global.scss */
 .sign-in {
   display: table;
   width: 100%;
   height: 100%;
 }
-/* line 167, ../compass/global.scss */
+/* line 168, ../compass/global.scss */
 .sign-in .sign-in-block {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 171, ../compass/global.scss */
+/* line 172, ../compass/global.scss */
 .sign-in .sign-in-block h5 {
   margin-top: -75px;
 }
@@ -184,15 +188,15 @@ a:hover, a:focus, a:visited {
 /*------------------------------------*\
     #ACCUEIL-ETUDIANT
 \*------------------------------------*/
-/* line 180, ../compass/global.scss */
+/* line 181, ../compass/global.scss */
 .etudiant {
   margin-top: 50px;
 }
-/* line 184, ../compass/global.scss */
+/* line 185, ../compass/global.scss */
 .etudiant .etudiant-block h1 {
   text-transform: none;
 }
-/* line 187, ../compass/global.scss */
+/* line 188, ../compass/global.scss */
 .etudiant .etudiant-block .table input {
   text-align: center;
   width: 75px;
@@ -202,28 +206,28 @@ a:hover, a:focus, a:visited {
 /*------------------------------------*\
     #ACCUEIL-ENSEIGNANT
 \*------------------------------------*/
-/* line 199, ../compass/global.scss */
+/* line 200, ../compass/global.scss */
 .enseignant {
   margin-top: 50px;
 }
-/* line 202, ../compass/global.scss */
+/* line 203, ../compass/global.scss */
 .enseignant label {
   display: inline-block;
   margin-right: 25px;
 }
-/* line 208, ../compass/global.scss */
+/* line 209, ../compass/global.scss */
 .enseignant .enseignant-block .btn {
   padding: 10px 25px;
   margin-top: 0;
   margin-left: 25px;
 }
-/* line 214, ../compass/global.scss */
+/* line 215, ../compass/global.scss */
 .enseignant .enseignant-block #etudiant,
 .enseignant .enseignant-block #classe,
 .enseignant .enseignant-block #controle {
   margin-top: 25px;
 }
-/* line 219, ../compass/global.scss */
+/* line 220, ../compass/global.scss */
 .enseignant .enseignant-block #etudiant input,
 .enseignant .enseignant-block #classe input,
 .enseignant .enseignant-block #controle input {
@@ -235,9 +239,17 @@ a:hover, a:focus, a:visited {
 }
 
 /*------------------------------------*\
+    #ACCUEIL-ADMIN
+\*------------------------------------*/
+/* line 234, ../compass/global.scss */
+.admin {
+  margin-top: 50px;
+}
+
+/*------------------------------------*\
     #SINGLE-ETUDIANT
 \*------------------------------------*/
-/* line 233, ../compass/global.scss */
+/* line 241, ../compass/global.scss */
 .buttons {
   list-style-type: none;
   margin: 0;
@@ -246,21 +258,71 @@ a:hover, a:focus, a:visited {
   text-align: center;
   margin-bottom: 50px;
 }
-/* line 241, ../compass/global.scss */
+/* line 249, ../compass/global.scss */
 .buttons li {
   display: inline-block;
   margin-right: 15px;
 }
-/* line 245, ../compass/global.scss */
+/* line 253, ../compass/global.scss */
 .buttons li:last-child {
   margin-right: 0;
 }
-/* line 249, ../compass/global.scss */
+/* line 257, ../compass/global.scss */
 .buttons li a {
   text-decoration: none;
 }
 
-/* line 256, ../compass/global.scss */
+/* line 264, ../compass/global.scss */
 #add-notes-block input {
   text-align: center;
+}
+
+/*------------------------------------*\
+    #OFFCANVAS MENU
+\*------------------------------------*/
+/* line 272, ../compass/global.scss */
+h3 {
+  font-size: 22px;
+  line-height: 22px;
+  padding: 15px;
+}
+
+/* line 278, ../compass/global.scss */
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+  padding: 5px 15px;
+  color: #9d9d9d;
+  background-color: transparent;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+/* line 286, ../compass/global.scss */
+.navbar-toggle:hover, .navbar-toggle:focus {
+  color: #6d6d6d;
+  background-color: transparent !important;
+  border-color: #6d6d6d;
+}
+
+@media (min-width: 0) {
+  /* line 294, ../compass/global.scss */
+  .navbar-toggle {
+    display: block;
+    /* force showing the toggle */
+  }
+}
+@media (min-width: 992px) {
+  /* line 300, ../compass/global.scss */
+  body {
+    padding: 0;
+  }
+
+  /* line 303, ../compass/global.scss */
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
 }
