@@ -10,8 +10,11 @@ if(!isset($_SESSION['personne'])){
     }
 }
 
-include 'header.php';
+if(isset($_POST)){
 
+}
+else {
+    include 'header.php';
 ?>
     <div class="container enseignant">
         <div class="enseignant-block">
@@ -30,7 +33,7 @@ include 'header.php';
                     </select>
                 </div>
             </div>
-            
+
             <!-- block:NotesEtudiants -->
             <div class="row" id="etudiant">
                 <div class="col-sm-12">
@@ -79,8 +82,7 @@ include 'header.php';
 
             <!-- block:Classe -->
             <div class="row" id="classe">
-                <div class=
-}"classe-block">
+                <div class="classe-block">
                     <div class="col-sm-12">
                         <h2>SID-1</h2>
 
@@ -144,17 +146,15 @@ include 'header.php';
                     </div>
                 </div>
             </div>
-}
 
-            <!-- block:Controle -->
-            <div class="row" id="controle">
-                <div class="controle-block">
-                    <div class="col-sm-12">
-                        <h2>SID-1</h2>
-
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
+        <!-- block:Controle -->
+        <div class="row" id="controle">
+            <div class="controle-block">
+                <div class="col-sm-12">
+                    <h2>Mathématiques ou Economie</h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
                                 <tr>
                                     <td>Nom</td>
                                     <td>Prénom</td>
@@ -183,13 +183,13 @@ include 'header.php';
                         </div>
                     </div>
                 </div>
-                <div class="classe-block">
-                    <div class="col-sm-12">
-                        <h2>SID-2</h2>
-
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
+            </div>
+            <div class="classe-block">
+                <div class="col-sm-12">
+                    <h2>Statistique descriptive 1</h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
                                 <tr>
                                     <td>Nom</td>
                                     <td>Prénom</td>
@@ -220,4 +220,5 @@ include 'header.php';
     </div>
 <?php
     include 'footer.php';
+}
 ?>
