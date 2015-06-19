@@ -22,6 +22,7 @@ if(isset($_SESSION['personne'])){
 include 'header.php';
 
 if( (isset($_POST['identifiant']) && !empty($_POST['identifiant'])) && (isset($_POST['password']) && !empty($_POST['password']))){
+    $mysqli = Database::getInstance();
     $identifiant=$mysqli->real_escape_string($_POST['identifiant']);
     $password=$mysqli->real_escape_string($_POST['password']);
     $resPersonne=$mysqli->query("SELECT * FROM personne WHERE pseudo = '$identifiant'");
