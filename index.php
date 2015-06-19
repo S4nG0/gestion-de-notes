@@ -80,7 +80,6 @@ if( (isset($_POST['identifiant']) && !empty($_POST['identifiant'])) && (isset($_
                     </div>
                 </div>
             </form>
-
         </div>
     </div>
 <?php
