@@ -1,6 +1,8 @@
 <?php
 
-$server = "192.168.7.150";
+session_start();
+
+$server = "localhost";
 $username = "root";
 $password = "";
 $database = "phpspe_gestionDeNotes";
@@ -11,6 +13,7 @@ if ($mysqli->connect_error) {
     die('Erreur de connexion (' . $mysqli->connect_errno . ') '
             . $mysqli->connect_error);
 }
+
 
 
 /**
