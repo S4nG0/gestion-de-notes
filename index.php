@@ -1,6 +1,6 @@
 <?php
 include 'config/config.php';
-
+include 'classes/database.class.php';
 $error = false;
 if(isset($_SESSION['personne'])){
     switch($_SESSION['personne']->statut) {

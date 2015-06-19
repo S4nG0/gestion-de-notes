@@ -14,10 +14,19 @@ class Administration extends Personne {
     public function recuperePromotion(){
         return $this->db->query("SELECT idPromotion,nom FROM promotion");
     }
+    public function recupereModule(){
+        return $this->db->query("SELECT idModule,nom FROM module");
+    }
     public function genererPseudo($nom,$prenom){
         return strtolower(substr($prenom,0,1).".".$nom);
     }
     public function ajouterEtudiant($idPromotion,$nom,$prenom,$adresse,$code_postal,$ville,$pseudo,$password){
+        $this->db->query("INSERT INTO personne(idPersonne, idPromotion, idDepartement, nom, prenom,
+                          adresse, code_postal, ville, statut, pseudo, password) VALUES ('',".$idPromotion.",
+                          NULL,'".$nom."','".$prenom."','".$adresse."',".$code_postal.",'".$ville."','etudiant',
+                          '".$pseudo."','".$password."')");
+    }
+    public function ajouterEnseignant($idPromotion,$nom,$prenom,$adresse,$code_postal,$ville,$pseudo,$password){
         $this->db->query("INSERT INTO personne(idPersonne, idPromotion, idDepartement, nom, prenom,
                           adresse, code_postal, ville, statut, pseudo, password) VALUES ('',".$idPromotion.",
                           NULL,'".$nom."','".$prenom."','".$adresse."',".$code_postal.",'".$ville."','etudiant',
