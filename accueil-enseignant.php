@@ -10,13 +10,9 @@ if(!isset($_SESSION['personne'])){
     }
 }
 
-if(isset($_POST)){
+include 'header.php';
 
-}
-else {
-    include 'header.php';
-
-    ?>
+?>
     <div class="container enseignant">
         <div class="enseignant-block">
             <div class="row text-center">
@@ -34,6 +30,8 @@ else {
                     </select>
                 </div>
             </div>
+
+?>
 
             <!-- block:NotesEtudiants -->
             <div class="row" id="etudiant">
@@ -222,5 +220,4 @@ else {
     </div>
 <?php
     include 'footer.php';
-}
 ?>
