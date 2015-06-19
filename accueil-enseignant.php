@@ -30,9 +30,7 @@ include 'header.php';
                     </select>
                 </div>
             </div>
-
-?>
-
+            
             <!-- block:NotesEtudiants -->
             <div class="row" id="etudiant">
                 <div class="col-sm-12">
@@ -81,7 +79,8 @@ include 'header.php';
 
             <!-- block:Classe -->
             <div class="row" id="classe">
-                <div class="classe-block">
+                <div class=
+}"classe-block">
                     <div class="col-sm-12">
                         <h2>SID-1</h2>
 
@@ -145,6 +144,7 @@ include 'header.php';
                     </div>
                 </div>
             </div>
+}
 
             <!-- block:Controle -->
             <div class="row" id="controle">
