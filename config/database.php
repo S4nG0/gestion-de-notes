@@ -1,6 +1,6 @@
 <?php
 
-$server = "localhost";
+$server = "192.168.7.150";
 $username = "root";
 $password = "";
 $database = "phpspe_gestionDeNotes";
