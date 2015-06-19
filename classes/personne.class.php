@@ -18,11 +18,6 @@
         private  $statut;
         private  $pseudo;
         private  $password;
-        
-        
-        public function Personne(){
-            echo  'test';
-        }
 
         /**
          * @return mixed
